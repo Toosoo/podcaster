@@ -12,22 +12,16 @@ export default function RootLayout({
      <div className="relative flex flex-col">
         <main className="relative flex bg-black-3">
             <LeftSidebar/>
-            <section className="flex min-h-screen flex-1 ">
+            <section className="flex min-h-screen flex-1 p-8">
             <div>
               <div className="flex h-16 items-center justify-between md:hidden">
                 <Image src='/icons/logo.svg' width={30} height={30} alt="menu icon" />
                 <MobileNav/>
               </div>
             </div>
-            <div>
-              Toaster (notification popup)
-            </div>
             {children}
             </section>
-
-
             <RightSidebar/>
-
         </main>
      </div>
     );
